@@ -1,6 +1,6 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 import profilePic from "../../assets/sohil_pic.jpg";
-import instaLogo from "../../assets/instagram.svg";
+import githubLogo from "../../assets/github-mark-white.svg";
 import linkedinLogo from "../../assets/linkedin.svg";
 export const Home = () => {
   return (
@@ -50,12 +50,12 @@ export const Home = () => {
               <img src={linkedinLogo} alt="Linkedin" className="w-6 h-6" />
             </a>
             <a
-              href="https://www.instagram.com/sohil.banana/"
+              href="https://github.com/SohilChanana"
               target="_blank"
               className="inline-flex h-12 w-12 items-center justify-center rounded-full border-2 border-blue-500/50 transition-all duration-100 hover:bg-blue-500/10 hover:translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)]"
               rel="noopener noreferrer"
             >
-              <img src={instaLogo} alt="instagram" className="w-6 h-6" />
+              <img src={githubLogo} alt="github" className="w-6 h-6" />
             </a>
           </div>
         </div>
