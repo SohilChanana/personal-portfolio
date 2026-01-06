@@ -27,6 +27,8 @@ export const About = () => {
       "ExpressJS",
       "NodeJS",
       "MongoDB",
+      "Supabase",
+      "Prisma",
       "Firebase",
       "AWS",
       "GCP",
