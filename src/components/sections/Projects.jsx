@@ -1,6 +1,8 @@
 import githubLogo from "../../assets/github-mark-white.svg";
 import youtubeLogo from "../../assets/youtube-icon-white.svg";
 import { RevealOnScroll } from "./RevealOnScroll";
+import ShinyText from "../reactbits/ShinyText";
+import SpotlightCard from "../reactbits/SpotlightCard";
 
 export const Projects = () => {
   return (
@@ -10,18 +12,22 @@ export const Projects = () => {
     >
       <RevealOnScroll>
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            Featured Projects
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            <ShinyText 
+              text="Featured Projects" 
+              speed={3}
+              color="#3b82f6"
+              shineColor="#22d3ee"
+            />
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+            <SpotlightCard className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30">
               <h3 className="font-bold text-xl mb-2">CauseCompass</h3>
               <p className="text-gray-300">
-                AI-powered website that rates companies based on their alignment
-                with user-defined social and environmental causes. CauseCompass
-                provides sources and alternative suggestions to many popular
-                companies, alongside AI-generated summaries backed by reliable
-                sources.
+                A platform enabling users to evaluate companies based on social
+                and environmental values. It leverages AI to provide detailed
+                summaries, alignment ratings, and alternative suggestions backed
+                by reliable sources.
               </p>
 
               <div className="flex flex-wrap gap-2 mt-4">
@@ -57,16 +63,58 @@ export const Projects = () => {
                   View Project
                 </a>
               </div>
-            </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+            </SpotlightCard>
+            <SpotlightCard className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30">
+              <h3 className="font-bold text-xl mb-2">
+                Zoomer - AI Meeting Assistant
+              </h3>
+              <p className="text-gray-300">
+                A fully integrated meeting assistant that automates note-taking
+                with real-time transcription and translation. Features include
+                synced video playback, LLM-powered summaries, and an interactive
+                Q&A system.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {[
+                  "Python",
+                  "TypeScript",
+                  "FastAPI",
+                  "NextJS",
+                  "Recall.ai",
+                  "Google Gemini",
+                ].map((skill, index) => (
+                  <span
+                    key={index}
+                    className=" bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all cursor-default"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex justify-between items-center ">
+                <a
+                  href="https://github.com/Matthew-J-Lew/zoomer"
+                  target="_blank"
+                  className="border border-blue-500/50 text-blue-500 py-2 px-3 rounded-full font-medium transition-all duration-100
+                        hover:translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-blue-500/10 mt-4 flex items-center gap-2"
+                  rel="noopener noreferrer"
+                >
+                  <img src={githubLogo} alt="GitHub" className="w-5 h-5" />
+                  View Project
+                </a>
+              </div>
+            </SpotlightCard>
+            <SpotlightCard className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30">
               <h3 className="font-bold text-xl mb-2">
                 Pactify - AI Contract Service
               </h3>
               <p className="text-gray-300">
-                Web application that utilizes AI to assist users in creating,
-                managing, and analyzing contracts. It offers features such as
-                contract templates, AI-driven suggestions, and a user-friendly
-                interface for seamless contract management.
+                Streamlines the legal document lifecycle by helping users draft,
+                analyze, and manage contracts. Key capabilities include smart
+                templates, AI-driven improvement suggestions, and a centralized
+                dashboard for all agreements.
               </p>
               <div className="flex flex-wrap gap-2 mt-4">
                 {[
@@ -99,8 +147,8 @@ export const Projects = () => {
                   View Project
                 </a>
               </div>
-            </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+            </SpotlightCard>
+            <SpotlightCard className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30">
               <h3 className="font-bold text-xl mb-2">
                 UTSCdle - University Geoguessr Game
               </h3>
@@ -153,8 +201,8 @@ export const Projects = () => {
                   View Project
                 </a>
               </div>
-            </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+            </SpotlightCard>
+            <SpotlightCard className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30">
               <h3 className="font-bold text-xl mb-2">
                 UofT Course Planner App
               </h3>
@@ -193,8 +241,8 @@ export const Projects = () => {
                   View Project
                 </a>
               </div>
-            </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+            </SpotlightCard>
+            <SpotlightCard className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30">
               <h3 className="font-bold text-xl mb-2">Stock Management Tool</h3>
               <p className="text-gray-300">
                 A command-line stock management tool that lets users create and
@@ -233,8 +281,8 @@ export const Projects = () => {
                   View Project
                 </a>
               </div>
-            </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+            </SpotlightCard>
+            <SpotlightCard className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30">
               <h3 className="font-bold text-xl mb-2">
                 Firefighter Felix - Assembly Game
               </h3>
@@ -279,7 +327,7 @@ export const Projects = () => {
                   View Project
                 </a>
               </div>
-            </div>
+            </SpotlightCard>
           </div>
         </div>
       </RevealOnScroll>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import { RevealOnScroll } from "./RevealOnScroll";
+import ShinyText from "../reactbits/ShinyText";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -34,9 +35,13 @@ export const Contact = () => {
     >
       <RevealOnScroll>
         <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            {" "}
-            Get In Touch
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            <ShinyText 
+              text="Get In Touch" 
+              speed={3}
+              color="#3b82f6"
+              shineColor="#22d3ee"
+            />
           </h2>
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="relative">

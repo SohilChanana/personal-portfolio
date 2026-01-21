@@ -2,6 +2,7 @@ import { RevealOnScroll } from "./RevealOnScroll";
 import profilePic from "../../assets/sohil_pic.jpg";
 import githubLogo from "../../assets/github-mark-white.svg";
 import linkedinLogo from "../../assets/linkedin.svg";
+
 export const Home = () => {
   return (
     <section
@@ -16,13 +17,13 @@ export const Home = () => {
             className="w-56 h-56 rounded-full mx-auto mb-6 object-cover shadow-[0px_0px_20px_5px_rgba(46,147,255,1)]
  hover:scale-105 transition-transform duration-300"
           />
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent loading-right">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
             Hi, I'm Sohil Chanana
           </h1>
 
           <p className=" text-gray-300 text-lg mb-8 max-w-lg mx-auto">
-            I’m a Computer Science student specializing in Software Engineering
-            at the University of Toronto Scarborough. I’m passionate about
+            I'm a Computer Science student specializing in Software Engineering
+            at the University of Toronto Scarborough. I'm passionate about
             building user-focused software and expanding my skills in Web
             Development, Computer Networks, and Full-Stack Development.
           </p>
