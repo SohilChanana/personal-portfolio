@@ -29,9 +29,9 @@ export const Home = () => {
 
           <p className=" text-gray-300 text-lg mb-8 max-w-lg mx-auto">
             I'm a Computer Science student specializing in Software Engineering
-            at the University of Toronto Scarborough. I'm passionate about
-            building user-focused software and expanding my skills in Web
-            Development, Computer Networks, and Full-Stack Development.
+            at the University of Toronto. I'm passionate about building
+            user-focused software and expanding my skills in Web Development,
+            Computer Networks, and Full-Stack Development.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-3">
             <a
