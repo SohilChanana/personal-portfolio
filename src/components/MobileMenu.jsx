@@ -65,6 +65,21 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       >
         Contact
       </a>
+      <a
+        href={`${import.meta.env.BASE_URL}SohilChanana_Resume_2026.pdf`}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => setMenuOpen(false)}
+        className={`bg-blue-500 text-white py-3 px-8 rounded-full font-semibold my-4 transform transition-all duration-300
+            hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] hover:scale-105
+            ${
+              menuOpen
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-5"
+            }`}
+      >
+        Resume
+      </a>
     </div>
   );
 };

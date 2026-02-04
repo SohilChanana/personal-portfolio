@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 
-export const Navbar = ({menuOpen, setMenuOpen}) => {
-
-    useEffect(() => {
-        document.body.style.overflow = menuOpen ? "hidden" : "";
-    }, [menuOpen]);
+export const Navbar = ({ menuOpen, setMenuOpen }) => {
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+  }, [menuOpen]);
   return (
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow">
       <div className="max-w-5xl mx-auto px-4">
@@ -13,7 +12,10 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
             sohil<span className="text-blue-500 ">.dev</span>{" "}
           </a>
 
-          <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+          <div
+            className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
             &#9776;
           </div>
 
@@ -45,6 +47,15 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
             >
               {" "}
               Contact{" "}
+            </a>
+            <a
+              href={`${import.meta.env.BASE_URL}SohilChanana_Resume_2026.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 text-white py-2 px-4 rounded-full font-medium transition-all
+              hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] hover:scale-105"
+            >
+              Resume
             </a>
           </div>
         </div>

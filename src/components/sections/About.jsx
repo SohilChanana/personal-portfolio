@@ -1,5 +1,6 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 import ShinyText from "../reactbits/ShinyText";
+import SpotlightCard from "../reactbits/SpotlightCard";
 
 export const About = () => {
   const skills = {
@@ -51,22 +52,25 @@ export const About = () => {
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">
-            <ShinyText 
-              text="About Me" 
+            <ShinyText
+              text="About Me"
               speed={3}
               color="#3b82f6"
               shineColor="#22d3ee"
             />
           </h2>
-          <div className="roudned-xl p-8 border-white/10 border hover:-translate-y-1 transition-all ">
-            <p className="text-gray-300">
-              Passionate developer with a growing focus on full-stack technologies
-              and building efficient, user-centered applications.
+          <SpotlightCard
+            className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all hover:border-blue-500/30"
+            spotlightColor="rgba(59, 130, 246, 0.15)"
+          >
+            <p className="text-gray-300 text-center">
+              Passionate developer with a growing focus on full-stack
+              technologies and building efficient, user-centered applications.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all text-center">
                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-center">
                   {skills.frontend.map((skill, index) => (
                     <span
                       key={index}
@@ -78,9 +82,9 @@ export const About = () => {
                   ))}
                 </div>
               </div>
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all text-center">
                 <h3 className="text-xl font-bold mb-4">Backend</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-center">
                   {skills.backend.map((skill, index) => (
                     <span
                       key={index}
@@ -92,9 +96,9 @@ export const About = () => {
                   ))}
                 </div>
               </div>
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all text-center">
                 <h3 className="text-xl font-bold mb-4">Other</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-center">
                   {skills.other.map((skill, index) => (
                     <span
                       key={index}
@@ -107,9 +111,12 @@ export const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </SpotlightCard>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <SpotlightCard
+              className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all hover:border-blue-500/30"
+              spotlightColor="rgba(59, 130, 246, 0.15)"
+            >
               <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
               <div className="text-gray-300">
                 <h4 className="font-bold">
@@ -125,8 +132,11 @@ export const About = () => {
                   <li>Software Engineering</li>
                 </ul>
               </div>
-            </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            </SpotlightCard>
+            <SpotlightCard
+              className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all hover:border-blue-500/30"
+              spotlightColor="rgba(59, 130, 246, 0.15)"
+            >
               <h3 className="text-xl font-bold mb-4">💼 Work Experience</h3>
               <div className="text-gray-300 space-y-4">
                 <div>
@@ -140,7 +150,7 @@ export const About = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </SpotlightCard>
           </div>
         </div>
       </RevealOnScroll>

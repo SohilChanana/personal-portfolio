@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 -40 575 300">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  
+  <text 
+    x="50%" y="50%" 
+    font-size="400" 
+    text-anchor="middle" 
+    dominant-baseline="middle" 
+    fill="url(#grad)" 
+    font-family="sans-serif" 
+    font-weight="bold">
+   SC
+  </text>
+</svg>
